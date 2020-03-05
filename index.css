@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+  width:75px;
+  height: 50px;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  border-bottom: 3px solid white;
+}
+
+.burger_bar{
+ border: solid 5px white;
+ margin: 0.5rem;
+ cursor: pointer;
+ transition: all 2s ease;
+}
+
+.bar{
+ border: 3px solid white;
+ width: 30px;
+ height: 5px;
+ margin:0.5rem;
+}
+.bar1,.bar2,.bar3{
+  transition: all 2s ease;
+}
+.navbar_list{
+  background-color: rgba(128, 128, 128, 0.95);
+  list-style-type: none;
+  padding-left: 5px;
+  height:0;
+  overflow: hidden;
+  transition: all 2s ease;
+}
+/* added after*/
+.navbar_list_collapse{
+  height:25vh;
+}
+.change .bar1{
+  transform: rotate(-45deg) translate(-10px,11px);
+}
+.change .bar2{
+ opacity:0;
+}
+.change .bar3{
+  transform: rotate(45deg) translate(-10px,-14px);
+}
+/* */
+.navbar_list_item{
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+.background_image{
+  min-height:90vh;
+  background: url('img/header-bcg.jpeg') center/cover no-repeat;
+}
